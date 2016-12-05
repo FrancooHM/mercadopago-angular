@@ -1,0 +1,72 @@
+include plain.html
+<!DOCTYPE html>
+<html lang="en" ng-app="mercadopagoApp">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <title>Uranga</title>
+  <meta name="description" content="">
+  <meta name="author" content="Franco Rabaglia">
+  <meta charset="utf-8">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css"> -->
+  <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="images/logo.png"> -->
+
+</head>
+
+<body class="main-layout">
+
+  <nav>
+    <div class="nav-wrapper yellow darken-2">
+      <a href="#" class="brand-logo right">MercadoPago App</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="#/">Token</a></li>
+        <li><a href="#/">Payment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- #################### -->
+  <!-- Angular router views -->
+  <!-- #################### -->
+  <ng-view ng-cloak></ng-view>
+  <!-- #################### -->
+  <!-- Angular router views -->
+  <!-- #################### -->
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- End Jquery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+<script src="angular/app.js"></script>
+<script src="angular/home/controller.js"></script>
+<script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+
+</html>

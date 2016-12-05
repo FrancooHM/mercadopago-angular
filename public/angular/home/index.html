@@ -1,0 +1,44 @@
+<form>
+  <fieldset>
+    <ul>
+      <li>
+        <label for="email">Email</label>
+        <input id="email" name="email" value="test_user_19653727@testvm.user.com" type="email" placeholder="your email" ng-model="vm.user.email" />
+      </li>
+      <li>
+        <label for="cardNumber">Credit card number:</label>
+        <input type="text" id="cardNumber" data-checkout="cardNumber" placeholder="4509 9535 6623 3704" ng-model="vm.user.cardNumber" />
+      </li>
+      <li>
+        <label for="securityCode">Security code:</label>
+        <input type="text" id="securityCode" data-checkout="securityCode" placeholder="123" ng-model="vm.user.securityCode" />
+      </li>
+      <li>
+        <label for="cardExpirationMonth">Expiration month:</label>
+        <input type="text" id="cardExpirationMonth" data-checkout="cardExpirationMonth" placeholder="12" ng-model="vm.user.cardExpirationMonth" />
+      </li>
+      <li>
+        <label for="cardExpirationYear">Expiration year:</label>
+        <input type="text" id="cardExpirationYear" data-checkout="cardExpirationYear" placeholder="2015" ng-model="vm.user.cardExpirationYear" />
+      </li>
+      <li>
+        <label for="cardholderName">Card holder name:</label>
+        <input type="text" id="cardholderName" data-checkout="cardholderName" placeholder="APRO" ng-model="vm.user.cardholderName" />
+      </li>
+      <li>
+        <label for="docType">Document type:</label>
+        <select id="docType" class="browser-default" data-checkout="docType" ng-model="vm.user.docType">
+          <option value="" disabled selected>Choose your document type</option>
+          <option ng-repeat="docOption in vm.docTypeOptions" ng-value="docOption.id">
+            {{docOption.name}}
+          </option>
+        </select>
+      </li>
+      <li>
+        <label for="docNumber">Document number:</label>
+        <input type="text" id="docNumber" data-checkout="docNumber" placeholder="12345678" ng-model="vm.user.docNumber" />
+      </li>
+    </ul>
+    <button value="Pay!" ng-click="vm.sendUser" />
+  </fieldset>
+</form>
