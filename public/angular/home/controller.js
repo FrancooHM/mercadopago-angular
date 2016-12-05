@@ -16,16 +16,5 @@ mercadopagoApp.controller('homeCtrl', ['$scope', '$rootScope', '$http', function
   function sendUser(){
 
   };
-  // var paymentData = {};
-  //
-  // $http.post(url, paymentData).then(successCallback, errorCallback);
-  //
-  // function successCallback() {
-  //   console.log('success');
-  // }
-  //
-  // function errorCallback() {
-  //   console.log('error');
-  // }
 
 }]);
